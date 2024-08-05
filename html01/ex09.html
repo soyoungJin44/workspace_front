@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="KO">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>html 공부</title>
+    </head>
+    
+    <body>
+        
+        목차
+        <hr>
+
+        <h1>html 공부</h1>
+        <h2>from - input(checkbox) button</h2>
+        
+        <form> <!--정송하려고하는거니까-->
+            <label for="chk-book">독서</label>
+            <input type="checkbox" id="chk-book"> <!--인라인태그넹-->
+            
+            <label for="chk-fish">낚시</label>
+            <input type="checkbox" id="chk-fish" checked="checked">
+
+            <label for="chk-walk">산책</label>
+            <input type="checkbox" id="chk-walk">
+
+            <br>
+            <label for="chk-dog">개</label>
+            <input type="checkbox" id="chk-dog">
+
+            <label for="chk-cat">고양이</label>
+            <input type="checkbox" id="chk-cat" checked="checked">
+
+            <label for="chk-bird">새</label>
+            <input type="checkbox" id="chk-bird">
+            <br>
+            <br>
+
+            <!--radio ------------------------------------>
+            <!-- name : 이름을 담을 그릇(이걸로 묶어주면 단일체크가능) // value : 노출시켜줄이름-->
+             <label for="r-apple">사과</label>
+             <input type="radio" id="r-apple" name="flute" value="">
+
+
+             <label for="r-grape">포도</label>
+             <input type="radio" id="r-grape" name="flute" value="">
+
+             <label for="r-orange">오렌지</label>
+             <input type="radio" id="r-orange" name="flute" value="">
+
+             <button type="reset">초기화</button>
+
+             <br><br>
+
+             <label for="r-m1">1월</label>
+             <input type="radio" id="r-m1" name="month" value="">
+
+             <label for="r-m2">2월</label>
+             <input type="radio" id="r-m2" name="month" value="" checked="checked">  <!--미리 체크된 상태로 노출시키고싶을때 ㅇㅇ -->
+
+             <label for="r-m3">3월</label>
+             <input type="radio" id="r-m3" name="month" value="">
+
+             <button type="reset">초기화</button>
+
+        </form>
+    </body>
+</html>
