@@ -1,0 +1,101 @@
+@charset "urf-8";
+
+*{  font-family: "맑은고딕";
+    font-size:17px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+h1{
+    font-family: "궁서";
+    font-size: 30px;
+    letter-spacing: 15px;
+}
+
+.span-blue{
+    color: #0000FF;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.span-red{
+    color: #ff0000;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.i-history{
+    color: #00ff00;
+    text-decoration: underline;
+}
+
+.milnet{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+div>p{
+    text-indent: 30px;
+}
+.gray{
+    background-color: #D9D9D9;
+    
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    
+}
+.pgreen{
+    color: #00FF00;
+    font-weight: bold;
+}
+.action{
+    color: #0000FF;
+    font-style: italic;
+}
+.point{
+    color: #ff0000;
+    font-weight: bold;
+}
+ul>li{
+    list-style-type: square;
+}
+ol>li{
+    list-style-type: none;
+}
+thead{
+    background-color:  #C8EBFA;
+}
+tr:hover{
+    background-color: #EDD3ED;
+}
+tbody td:nth-child(2n){
+    text-align: right;
+}
+tbody td:nth-child(2n)::before{
+    content:"약 "
+}
+tbody td:nth-child(2n)::after{
+    content: "(MB/초)";
+}
+a:link{
+    color: #ffffff;
+    text-decoration: none;
+}
+a:visited{
+    color: #ffffff;
+    text-decoration: none;
+}
+a:active{
+    color: #0000ff;
+    text-decoration: underline
+}
+
+

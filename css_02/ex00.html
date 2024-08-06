@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+
+        <style>
+            .box-red{
+                width: 50%;
+                height: 600px;
+                background-color: #f00;
+            }
+
+            .box-blue{
+                width: 500px;
+                height: 80px;
+                background-color: blue;
+            }
+
+            .span-red{
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                background-color: #f00;
+            }
+            .span-blue{
+                background-color: blue;
+            }
+            .profile{
+                width: 300;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="box-red">
+            css에서 div 가로 세로 어떻게 적용되는지 확인해봄
+        </div>
+
+        <div class="box-blue">
+            파란박스~~
+        </div>
+
+        <p class="box-red">
+            css에서 p태그 가로 세로 어떻게 적용되는지 확인해봄
+        </p>
+
+        <br><br><br>
+
+        <span class="span-red">사과</span>
+        <sptn class="span-red">포도</sptn>
+        <span class="span-blue">배</span>
+
+        <img class="profile" src="../img/jung.jpg">
+        <img class="profile" src="../img/yoo.jpg">
+
+        <button class="box-red" type="submit">저장</button>
+        <button type="button">우편번호</button>
+
+
+
+    </body>
+
+</html>
