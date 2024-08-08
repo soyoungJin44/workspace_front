@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>회원가입</title>
+        <link rel="stylesheet" href="./border/join.css">
+        <link rel="stylesheet" href="./border/reset.css">
+
+    </head>
+
+    <body>
+        
+        <div class="back">
+
+            <h3>회원가입</h3>
+            
+            <ol>
+                <li>홈</li>
+                <li>유저</li>
+                <li>회원가입</li>
+            </ol>
+
+            <div class="form-under">
+                <label class="form-title" for="user-id">아이디</label>
+                <input id="user-id" type="text" name="" value="" placeholder="아이디를 입력해주세요.">
+            </div>
+
+            <div class="form-under">
+                <label class="form-title" for="user-pw">패스워드</label>
+                <input id="user-pw" type="text" name="" value="" placeholder="패스워드를 입력해주세요.">
+            </div>
+
+            <div class="form-under">
+                <label class="form-title" for="user-name">이름</label>
+                <input id="user-name" type="text" name="" value="" placeholder="이름을 입력해주세요.">
+            </div>
+
+            <div class="form-under">
+                <label class="form-title" for="user-profile">프로필사진</label>
+                <input id="user-profile" type="file" name="" value="" >
+            </div>
+
+            <div class="form-under">
+                <label class="form-title" for="user-adress">주소</label>
+                <input id="user-adress" type="url" name="" value="">
+                <button type="submit">우편번호찾기</button>
+                <input id="user-adress" type="text" name="" value="" >
+            </div>
+
+            <div class="form-under">
+                <label class="form-title" for="user-tel">이동통신사</label>
+                    <select id="user-tel">
+                        <option>선택해주세요</option>
+                        <option>LGU+</option>
+                        <option>SKT</option>
+                        <option>KT</option>
+                        <option>알뜰통신사</option>
+                    </select>
+            </div>
+
+            <div class="form-under">
+                <span class="form-title">나이</span>
+                <label for="rdo-ten">10대</label>
+                <input id="rdo-ten" type="radio" name="ch-age" value="">
+
+                <label for="rdo-tw">20대</label>
+                <input id="rdo-tw" type="radio" name="ch-age" value="">
+
+                <label for="rdo-thr">30대</label>
+                <input id="rdo-thr" type="radio" name="ch-age" value="">
+
+                <label for="rdo-fort">40대</label>
+                <input id="rdo-fort" type="radio" name="ch-age" value="">
+
+                <label for="rdo-ano">기타</label>
+                <input id="rdo-ano" type="radio" name="ch-age" value="">
+
+            </div>
+
+            <div class="form-under">
+                <span class="form-title">혈액형</span>
+                    <label for="b-a">A형</label>
+                    <input id="b-a" type="radio" name="blood" value="">
+
+                    <label for="b-b">B형</label>
+                    <input id="b-b" type="radio" name="blood" value="">
+
+                    <label for="b-o">O형</label>
+                    <input id="b-o" type="radio" name="blood" value="">
+
+                    <label for="b-ab">AB형</label>
+                    <input id="b-ab" type="radio" name="blood" value="">
+            </div>
+
+            <div class="form-under">
+                <span class="form-title">취미</span>
+                    <label for="reading">독서</label>
+                    <input id="reading" type="checkbox" name="">
+
+                    <label for="fishing">낚시</label>
+                    <input id="fishing" type="checkbox" name="">
+
+                    <label for="travel">여행</label>
+                    <input id="travel" type="checkbox" name="">
+
+                    <label for="movie">영화</label>
+                    <input id="movie" type="checkbox" name="">
+
+                    <label for="coding">코딩</label>
+                    <input id="coding" type="checkbox" name="">
+            </div>
+
+            <div>
+                <span class="form-title">자기소개</span>
+                    <textarea>나는 진소영입니다.</textarea>
+            </div>
+
+            <div>
+                <button type="submit">등록</button>
+                <button type="reset">초기화</button>
+            </div>
+
+        </div>    
+    </body>
+
+</html>

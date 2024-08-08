@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+
+        <!-- visibillity : 자리는 남고 내용 사라짐   ///  display : 공간까지 같이 사라짐 -->
+
+        <style>
+            .box{
+                width: 300px;
+                height: 100px;
+            }
+            
+            .box-red{
+                background-color: red;
+            }
+
+            .box-green{
+                background-color: green;
+                visibility: hidden
+            }
+
+            .box-blue{
+                background-color: blue;
+            }
+
+            .box-green2{
+                background-color: green;
+                display: none;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="box box-red">
+            빨간박스
+        </div>
+
+        <div class="box box-green">
+            초록박스
+        </div>
+
+        <div class="box box-blue">
+            파란박스
+        </div>
+
+        <br><br><br><br><br>
+        <div class="box box-red">
+            빨간박스
+        </div>
+
+        <div class="box box-green2">
+            초록박스
+        </div>
+
+        <div class="box box-blue">
+            파란박스
+        </div>
+
+    </body>
+
+</html>

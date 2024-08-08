@@ -1,0 +1,52 @@
+@charset "utf";
+
+body{
+    background-color: #808080;
+    font-family: "맑은고딕";
+    font-size: 12px;
+}
+
+body div input{
+    font-size: 15px;
+    font-family: "맑은고딕";
+}
+
+.back{
+    width: 600px;
+    background-color:white;
+}
+
+body h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+body .form-under{
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid #000000;
+}
+
+body .form-under .form-title{
+    display: inline-block;
+    width: 100px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* input 아이디,패스워드,이름 */
+#user-id{
+    width: 200px;
+}
+#user-pw{
+    width: 200px;
+}
+#user-name{
+    width: 200px;
+}
+
+/* radio, check의 label:맑은고딕 15px */
+.form-under>span~label{
+    font-size: 15px;
+    font-family: "맑은고딕";
+}
+

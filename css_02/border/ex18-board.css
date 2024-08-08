@@ -1,0 +1,95 @@
+@charset "utf";
+
+
+body{
+    font-family: "맑은고딕";
+    font-size: 12px;
+    background-color: #808080;
+}
+
+.back{
+    width: 700px;
+    background-color: white;
+    
+}
+
+.back h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 목차  (옆에 글이 있으면 흐르듯이 됨. clearfix 사용)*/
+.back ol>li, ul>li {
+    float: left;
+    border-style: none;
+
+    padding-right: 5px;
+}
+
+.back ol>li:not(:last-child)::after{
+    content: ">";
+}
+
+.back .form-group{
+    margin-bottom: 10px;
+}
+
+/* 여러곳에서 사용 */
+.back .form-group .form-text{
+    display: inline-block;
+    width: 80px;
+    text-align: left;
+    /* background-color: #808080; */
+}
+
+.back .form-group #sel-board{
+    width: 200px;
+}
+
+.back .form-group #txt-title{
+    width: 600px;
+}
+
+.back .form-group #txt-pw{
+    width: 196px;
+}
+
+/* 공개범위 선택 */
+input[name="scope"]{
+    margin-right: 10px;
+
+    vertical-align: middle;
+}
+
+/* 허용범위 선택 */
+input[type="checkbox"]{
+    margin-right: 10px;
+
+    vertical-align: middle;
+}
+
+/* 글작성칸 */
+.back .form-group #txt-content{
+    width: 686px;
+    height: 80px;
+    background-color: rgb(194, 170, 233);
+    
+    vertical-align: middle;
+}
+
+/* 첨부파일  */
+
+.btn-area{
+    border-top: 2px solid #000000;
+    /* background-color: #808080; */
+
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+/* 버튼 */
+button{
+    width: 60px;
+    height: 30px;
+}
+
