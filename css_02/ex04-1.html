@@ -8,19 +8,25 @@
             table{
                 border-collapse: collapse;
                 border: none #000000;
+                border-right: none;
+                border-left: none;
                 text-align: center;
                 color: #000000;
             }
 
             table>thead{
-                background-color: antiquewhite;
+                background-color: #b4b4b4;
             }
             table>thead>th, table>tbody>tr>td {
                 border-bottom: 1px dotted #000000;
             }
-            table>tbody>tr :hover {
+            table>tbody>tr:hover {
                 background-color: yellow;
                 
+            }
+            table>tbody>tr>td:nth-child(2){
+                text-decoration: underline;
+                color: blue;
             }
 
         </style>
@@ -32,7 +38,7 @@
         <h3>일반게시판</h3>
         <h4>리스트</h4>
 
-        <table border="2">
+        <table border="1">
             <colgroup>
                 <col style="width: 50px;">
                 <col style="width: 350px;">
