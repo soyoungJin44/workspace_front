@@ -1,52 +1,81 @@
 @charset "utf";
 
 body{
-    background-color: #808080;
-    font-family: "맑은고딕";
+    font-family: "맑은 고딕";
     font-size: 12px;
-}
-
-body div input{
-    font-size: 15px;
-    font-family: "맑은고딕";
+    background-color: #808080;
 }
 
 .back{
     width: 600px;
-    background-color:white;
+    background-color: white;
 }
 
-body h3{
+/* 회원가입 */
+.back h3{
     font-size: 18px;
     font-weight: bold;
 }
 
-body .form-under{
-    padding: 10px 0px 10px 0px;
-    border-bottom: 1px solid #000000;
+/* 목차 */
+.back ol>li{
+    float: left;
+
+    padding-right: 5px;
 }
 
-body .form-under .form-title{
+
+/* 폼타이틀 세팅 */
+.back .form-group{
+    padding: 10px;
+    border-bottom: 1px solid #000000 ;
+}
+
+.back .form-title{
     display: inline-block;
-    width: 100px;
-    font-size: 12px;
+    width: 120px;
     text-align: center;
+    font-size: 12px;
 }
 
-/* input 아이디,패스워드,이름 */
-#user-id{
+/* 아이디,패스워드,이름 */
+.back .form-group .form-title~input[name="one"]{
     width: 200px;
-}
-#user-pw{
-    width: 200px;
-}
-#user-name{
-    width: 200px;
+    
 }
 
-/* radio, check의 label:맑은고딕 15px */
-.form-under>span~label{
-    font-size: 15px;
+/* 주소 */
+.back .form-group .form-title~input[name="adress"]{
+    width: 250px;
+}
+.back .form-group input[name="full-adress"]{
+    width: 400px;
+    margin-left: 124px;
+    margin-top: 5px;
+}
+
+/* 나이, 혈액형, 취미 */
+.back .form-group>span~label{
     font-family: "맑은고딕";
+    font-size: 15px;
+}
+.back .form-group>span~input{
+    margin-right: 10px;
+}
+
+/* 자기소개 */
+.back .form-group .txt-area{
+    width: 400px;
+    height: 100px;
+}
+
+/* 버튼 */
+.back .btn{
+    width: 80px;
+    height: 30px;
+}
+.back .btn-area{
+    padding: 10px 0 10px 0;
+    text-align: center;
 }
 
