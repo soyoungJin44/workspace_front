@@ -1,0 +1,112 @@
+@charset "utf";
+
+/* 기본 틀은 기존 CSS에서 끌어다씀 */
+
+/* 컨텐츠2 작업 */
+
+
+
+#wrap #contents2 #aside{
+    float: left;
+
+    width: 180px;
+}
+
+#wrap #contents2 #main{
+    background-color: blueviolet;
+    float: left;
+
+    width: 820px;
+}
+
+/* aside 공간이 비면 안되기때문에 width값을 100%로 설정하는것도 방법임 */
+/* 가로폭 고정으로 주고 padding으로 중앙으로 배치 */
+#aside h2{
+    width: 180px;
+    height: 60px;
+    background-color: bisque;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    text-align: center;  /*가로 중앙*/
+    line-height: 60px;   /*세로 간격이랑 동일하게 맞춰주면 중앙으로 옴*/
+
+}
+
+#aside ul li{
+    border: 1px solid #000000;
+    font-size: 15px;
+
+    padding: 8px 0px 8px 50px;
+    margin: 5px 0px 0px 0px;
+
+}
+
+/* 게시판공간 */
+#contents2 #main .title{
+    background-color: aqua;
+
+}
+#contents2 #main .title span{
+    display: inline-block;
+    border: 1px solid #000000;
+
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "맑은고딕";
+    text-align: bottom;
+
+}
+
+/* 리스트부분 */
+
+#contents2 #main .title ul li{
+    /* float: right; */
+}
+
+/* 검색부분 */
+#contents2 #main .search-box{
+    border: 1px solid #000000;;
+
+    float: left;
+    margin-left: 570px;
+    
+    
+    
+}
+
+#contents2 #main .clearfix button{
+    background-color: blue;
+
+    float: right;
+    width: 60px;
+    padding: 3px 3px;
+
+    font-size: 15px;
+}
+
+/* 게시판글 표 */
+#contents2 #main .chart{
+    background-color: rgb(255, 0, 191);
+    width: 820px;
+}
+#contents2 #main .chart table{
+    width: 790px;
+    margin-left: 30px;
+}
+
+/* 표 헤드부분 */
+
+#contents2 #main table thead{
+   
+
+}
+#contents2 #main table thead th{
+    border-bottom: 1px solid #000000;
+}
+
+#contents2 #main table tr td{
+    border-bottom: 1px solid #000000;
+    text-align: center;
+}

@@ -21,7 +21,10 @@ body{
 .back ol>li{
     float: left;
 
-    padding-right: 5px;
+    margin-left: 10px;
+}
+.back ol>li:not(:last-child)::after{
+    content: ">";
 }
 
 
