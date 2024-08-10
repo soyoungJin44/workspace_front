@@ -38,12 +38,12 @@ h1{
 }
 #header{
     padding: 10px 0 10px 0;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 2px solid #dddddd;
 }
 
 /* nav */
 #wrap #nav{
-    border-bottom: 1px solid #e7eaed;
+    border-bottom: 2px solid #e7eaed;
     padding-bottom: 20px;
 }
 

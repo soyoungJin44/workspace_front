@@ -61,27 +61,27 @@
                 </div>
                 
                 <!-- 메인게시판 -->
-                <div id="main" class="clearfix">
-                    <div class="title">
-                        <span>게시판</span>
-
-                        <ul>
-                            <li>홈</li>
-                            <li>게시판</li>
-                            <li>일반게시판</li>
-                        </ul>
-                    </div>
-
-                    <div class="clearfix">
-                        <div class="search-box">
-                        
-                            <label for="search"></label>
-                            <input id="search" type="text" name="" value="">
+                <div id="main">
+                    <div class="title clearfix">
+                        <h3>일반게시판</h3>
+                        <div class="main-list">
+                            <ul>
+                                <li>홈</li>
+                                <li>게시판</li>
+                                <li>일반게시판</li>
+                            </ul>
                         </div>
-
-                        <button type="submit">검색</button>
                     </div>
+                    <!-- 검색부분 -->
+                        <div class="search clearfix">
+                            <div class="search-box">
+                            
+                                <label for="search"></label>
+                                <input id="search" type="text" name="" value="">
+                            </div>
 
+                            <button type="submit">검색</button>
+                        </div>
                     <!-- 게시판글 표 -->
                     <div class="chart">
                         <table>
@@ -143,6 +143,29 @@
                                 <td>[삭제]</td>
                             </tr>
                         </table>
+                    </div>
+
+                    <!-- 페이지설정, 글쓰기버튼 -->
+                    <div class="page-main clearfix">
+                        <div class="page-list">
+                            <ul>
+                                <li>◀</li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>10</li>
+                                <li>▶</li>
+                            </ul>
+                        </div>    
+                        <div class="button-area">
+                            <button type="submit">글쓰기</button>
+                        </div>
                     </div>
                 </div>
             </div>

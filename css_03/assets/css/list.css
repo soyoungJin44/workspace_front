@@ -3,7 +3,9 @@
 /* 기본 틀은 기존 CSS에서 끌어다씀 */
 
 /* 컨텐츠2 작업 */
-
+#wrap #contents2{
+    padding-top: 15px;
+}
 
 
 #wrap #contents2 #aside{
@@ -13,7 +15,7 @@
 }
 
 #wrap #contents2 #main{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     float: left;
 
     width: 820px;
@@ -24,7 +26,7 @@
 #aside h2{
     width: 180px;
     height: 60px;
-    background-color: bisque;
+    background-color: rgb(240, 173, 177);
 
     font-size: 20px;
     font-weight: bold;
@@ -44,51 +46,74 @@
 }
 
 /* 게시판공간 */
-#contents2 #main .title{
-    background-color: aqua;
+#contents2 #main {
+    
 
 }
-#contents2 #main .title span{
-    display: inline-block;
-    border: 1px solid #000000;
+#contents2 #main .title h3{
+    /* display: inline-block; */
+    /* border: 1px solid #000000; */
+    float: left;
 
-    font-size: 25px;
+    font-size: 23px;
     font-weight: bold;
     font-family: "맑은고딕";
     text-align: bottom;
 
+    padding-left: 30px;
+    padding-top: 10px;  
 }
 
 /* 리스트부분 */
 
-#contents2 #main .title ul li{
-    /* float: right; */
+#contents2 #main .title .main-list ul li{
+    float: left;
+    font-size: 12px;
 }
 
+#contents2 #main .title .main-list ul li:not(:last-child)::after{
+    content: ">";
+    padding:8px;
+}
+
+#contents2 #main .title .main-list{
+    padding-left: 660px;
+    padding-top: 20px;
+}
+
+
 /* 검색부분 */
+#contents2 #main .search{
+    border-top: 2px solid #dddddd;
+    width: 790px;
+    margin-left: 30px;
+    margin-top: 10px;
+
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
 #contents2 #main .search-box{
-    border: 1px solid #000000;;
+    /* border-top: 2px solid #000000; */
 
     float: left;
-    margin-left: 570px;
-    
-    
+    margin-left:548px;
     
 }
 
 #contents2 #main .clearfix button{
-    background-color: blue;
+    /* background-color: blue; */
 
     float: right;
     width: 60px;
-    padding: 3px 3px;
+    padding: 1px 3px;
 
     font-size: 15px;
 }
 
 /* 게시판글 표 */
 #contents2 #main .chart{
-    background-color: rgb(255, 0, 191);
+    /* background-color: rgb(255, 0, 191); */
     width: 820px;
 }
 #contents2 #main .chart table{
@@ -98,15 +123,53 @@
 
 /* 표 헤드부분 */
 
-#contents2 #main table thead{
-   
 
-}
 #contents2 #main table thead th{
-    border-bottom: 1px solid #000000;
+    background-color:rgb(240, 173, 177);
+    border-bottom: 2px solid #000000;
+    border-top: 2px solid #000000;
+    padding: 8px 0px 8px 0px;
+
+    font-size: 15px;
+    font-weight: bold;
 }
 
 #contents2 #main table tr td{
     border-bottom: 1px solid #000000;
     text-align: center;
+    padding: 8px 0px 8px 0px;
+
+    font-size: 10px;
+}
+
+/* 페이지 설정 리스트 */
+#contents2 #main .page-main{
+    padding: 10px 0px;
+    padding-bottom: 70px;
+}
+
+
+#contents2 #main .page-main .page-list ul li{
+    float: left;
+
+    font-size: 13px;
+    padding-right: 12px;
+    
+}
+
+#contents2 #main .page-main .page-list ul{
+    padding-left: 300px;
+    
+}
+
+/* 글쓰기 버튼 */
+#contents2 #main .page-main .button-area{
+    padding-top: 10px;
+}
+
+#contents2 #main .page-main button{
+    width: 60px;
+    padding: 1px 3px;
+
+    font-size: 15px;
 }
