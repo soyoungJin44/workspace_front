@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+/* 기본 틀은 기존 CSS에서 끌어다씀 */
+
+/* 컨텐츠2 작업 */
+#wrap #contents2{
+    padding-top: 15px;
+}
+
+
+#wrap #contents2 #aside{
+    float: left;
+
+    width: 180px;
+}
+
+#wrap #contents2 #main{
+    /* background-color: blueviolet; */
+    float: left;
+
+    width: 820px;
+}
+
+/* aside 공간이 비면 안되기때문에 width값을 100%로 설정하는것도 방법임 */
+/* 가로폭 고정으로 주고 padding으로 중앙으로 배치 */
+#aside h2{
+    width: 180px;
+    height: 60px;
+    background-color: rgb(240, 173, 177);
+
+    font-size: 20px;
+    font-weight: bold;
+
+    text-align: center;  /*가로 중앙*/
+    line-height: 60px;   /*세로 간격이랑 동일하게 맞춰주면 중앙으로 옴*/
+
+}
+
+#aside ul li{
+    border: 1px solid #000000;
+    font-size: 15px;
+
+    padding: 8px 0px 8px 50px;
+    margin: 5px 0px 0px 0px;
+
+}
+
+/* 게시판공간 */
+#contents2 #main {
+    
+
+}
+#contents2 #main .title h3{
+    /* display: inline-block; */
+    /* border: 1px solid #000000; */
+    float: left;
+
+    font-size: 23px;
+    font-weight: bold;
+    font-family: "맑은고딕";
+    text-align: bottom;
+
+    padding-left: 30px;
+    padding-top: 10px;  
+}
+
+/* 리스트부분 */
+
+#contents2 #main .title .main-list ul li{
+    float: left;
+    font-size: 12px;
+}
+
+#contents2 #main .title .main-list ul li:not(:last-child)::after{
+    content: ">";
+    padding:8px;
+}
+
+#contents2 #main .title .main-list{
+    padding-left: 660px;
+    padding-top: 20px;
+}
+
+/* ************************************************* */
+/* 갤러리 메인 */
+#contents2 #main .gallery-main{
+    /* background-color: rgb(204, 244, 244); */
+    
+    border-top: 2px solid #dddddd;
+    margin-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    
+    text-align: right;
+}
+
+
+/* 이미지올리기버튼 */
+#contents2 #main .gallery-main .btn-gallery input{
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+/* 사진 메인 */
+#contents2 #main .photo-main{
+    width: 790px;
+    /* background-color: rgb(238, 207, 169); */
+
+    margin-left: 30px;
+    margin-bottom: 15px;
+
+}
+
+
+#contents2 #main .photo-main div{
+    float: left;
+    border: 1px solid #dddddd;
+
+    margin: 2px;
+}
+
+#contents2 #main .photo-main img{
+    padding: 3px 2px;
+    
+    width: 187px;
+    height: 220px;
+}
+
+#contents2 #main .photo-main figcaption{
+    font-size: 12px;
+}
+
+
+/* 푸터 */
+/* footer */
+#wrap #footer{
+    padding: 15px 0px;
+    background-color: #e7eaed;
+    text-align: center;
+}
+
+#footer p{
+    font-size: 15px;
+}

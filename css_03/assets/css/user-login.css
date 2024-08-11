@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+/* 기본 틀은 기존 CSS에서 끌어다씀 */
+
+/* 컨텐츠2 작업 */
+#wrap #contents2{
+    padding-top: 15px;
+}
+
+
+#wrap #contents2 #aside{
+    float: left;
+
+    width: 180px;
+}
+
+#wrap #contents2 #main{
+    /* background-color: blueviolet; */
+    float: left;
+
+    width: 820px;
+}
+
+/* aside 공간이 비면 안되기때문에 width값을 100%로 설정하는것도 방법임 */
+/* 가로폭 고정으로 주고 padding으로 중앙으로 배치 */
+#aside h2{
+    width: 180px;
+    height: 60px;
+    background-color: rgb(240, 173, 177);
+
+    font-size: 20px;
+    font-weight: bold;
+
+    text-align: center;  /*가로 중앙*/
+    line-height: 60px;   /*세로 간격이랑 동일하게 맞춰주면 중앙으로 옴*/
+
+}
+
+#aside ul li{
+    border: 1px solid #000000;
+    font-size: 15px;
+
+    padding: 8px 0px 8px 50px;
+    margin: 5px 0px 0px 0px;
+
+}
+
+/* 게시판공간 */
+#contents2 #main {
+    
+
+}
+#contents2 #main .title h3{
+    /* display: inline-block; */
+    /* border: 1px solid #000000; */
+    float: left;
+
+    font-size: 23px;
+    font-weight: bold;
+    font-family: "맑은고딕";
+    text-align: bottom;
+
+    padding-left: 30px;
+    padding-top: 10px;  
+}
+
+/* 리스트부분 */
+
+#contents2 #main .title .main-list ul li{
+    float: left;
+    font-size: 12px;
+}
+
+#contents2 #main .title .main-list ul li:not(:last-child)::after{
+    content: ">";
+    padding:8px;
+}
+
+#contents2 #main .title .main-list{
+    padding-left: 660px;
+    padding-top: 20px;
+}
+
+/* **************************************** */
+
+/* 메인박스 */
+#contents2 #main .main-box{
+    /* background-color: rgb(192, 233, 220); */
+
+    width: 790px;
+    margin-left: 30px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 2px solid #dddddd;
+
+    margin-bottom: 20px;
+
+}
+
+#contents2 #main .main-box .main-line{
+    border: 2px solid #dddddd;
+    width: 580px;
+    margin: 0px auto;
+    
+}
+/* 리스트 네임 */
+#contents2 #main .main-box .list-name{
+    /* background-color: rgb(183, 183, 241); */
+
+    float: left;
+    margin-left: 150px;
+
+    /* border: 1px solid #000000; */
+}
+#contents2 #main .main-box .main-line .list-name ul li{
+    padding: 20px 0px 10px 0px;
+
+    font-size: 12px;
+}
+/* text-login(입력창) */
+#contents2 #main .main-box .main-line .txt-login{
+    /* background-color: rgb(186, 186, 254); */
+    
+}
+
+#contents2 #main .main-box .main-line .txt-login ul li{
+    font-size: 13px;
+    padding-top: 20px;
+    
+}
+#contents2 #main .main-box .main-line .txt-login ul li input{
+    margin-left: 20px;
+}
+
+/* 로그인버튼 */
+#contents2 #main .main-box .btn-login{
+    /* background-color: rgb(238, 205, 166); */
+    padding: 25px 0px;
+    margin-left: 240px;
+}
+#contents2 #main .main-box .btn-login input{
+    width: 100px;
+
+    font-size: 12px;
+    padding: 3px 2px;
+}
+/* footer */
+#wrap #footer{
+    padding: 15px 0px;
+    background-color: #e7eaed;
+    text-align: center;
+}
+
+#footer p{
+    font-size: 15px;
+}

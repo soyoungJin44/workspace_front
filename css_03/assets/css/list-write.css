@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+/* 기본 틀은 기존 CSS에서 끌어다씀 */
+
+/* 컨텐츠2 작업 */
+#wrap #contents2{
+    padding-top: 15px;
+}
+
+
+#wrap #contents2 #aside{
+    float: left;
+
+    width: 180px;
+}
+
+#wrap #contents2 #main{
+    /* background-color: blueviolet; */
+    float: left;
+
+    width: 820px;
+}
+
+/* aside 공간이 비면 안되기때문에 width값을 100%로 설정하는것도 방법임 */
+/* 가로폭 고정으로 주고 padding으로 중앙으로 배치 */
+#aside h2{
+    width: 180px;
+    height: 60px;
+    background-color: rgb(240, 173, 177);
+
+    font-size: 20px;
+    font-weight: bold;
+
+    text-align: center;  /*가로 중앙*/
+    line-height: 60px;   /*세로 간격이랑 동일하게 맞춰주면 중앙으로 옴*/
+
+}
+
+#aside ul li{
+    border: 1px solid #000000;
+    font-size: 15px;
+
+    padding: 8px 0px 8px 50px;
+    margin: 5px 0px 0px 0px;
+
+}
+
+/* 게시판공간 */
+#contents2 #main {
+    
+
+}
+#contents2 #main .title h3{
+    /* display: inline-block; */
+    /* border: 1px solid #000000; */
+    float: left;
+
+    font-size: 23px;
+    font-weight: bold;
+    font-family: "맑은고딕";
+    text-align: bottom;
+
+    padding-left: 30px;
+    padding-top: 10px;  
+}
+
+/* 리스트부분 */
+
+#contents2 #main .title .main-list ul li{
+    float: left;
+    font-size: 12px;
+}
+
+#contents2 #main .title .main-list ul li:not(:last-child)::after{
+    content: ">";
+    padding:8px;
+}
+
+#contents2 #main .title .main-list{
+    padding-left: 660px;
+    padding-top: 20px;
+}
+
+/* *************************************** */
+/* 제목 입력부분 */
+#contents2 #main .write-box{
+    /* background-color: rgb(195, 250, 250); */
+    border-top: 2px solid #dddddd;
+    width: 790px;
+    margin-left: 30px;
+    margin-top: 10px;
+
+    padding: 10px 0px 10px 0px;
+}
+
+#contents2 #main .write-box .write-title label{
+    font-size: 15px;
+}
+#contents2 #main .write-box .write-title input{
+    float: right;
+    width: 730px;
+    margin-left: 20px;
+}
+
+/* 글쓰는 칸 */
+#contents2 #main .write-txtarea{
+    width: 790px;
+    /* background-color: rgb(202, 202, 254); */
+
+    margin-left: 30px;
+    padding: 0px 0px 10px 0px;
+}
+
+#contents2 #main .write-txtarea textarea{
+    width: 790px;
+    height: 350px;
+
+    font-size: 12px;
+}
+
+/* 버튼부분 */
+#contents2 #main .btn-write{
+    width: 790px;
+    /* background-color: #f9f9d3; */
+
+    margin-left: 30px;
+    padding-bottom: 30px;
+}
+#contents2 #main .btn-write ul li{
+    float: right;
+    padding-left: 10px;
+
+}
+#contents2 #main .btn-write ul li input{
+    width: 55px;
+}
+
+/* 푸터 */
+/* footer */
+#wrap #footer{
+    padding: 15px 0px;
+    /* background-color: #e7eaed; */
+    text-align: center;
+}
+
+#footer p{
+    font-size: 15px;
+}
